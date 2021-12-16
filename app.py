@@ -28,6 +28,10 @@ def top1():
     return render_template('top1.html')
 app.add_url_rule("/top1","top1", top1)
 
+def agradecimentos():
+    return render_template('agradecimentos.html')
+app.add_url_rule("/agradecimentos","agradecimentos", agradecimentos)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
